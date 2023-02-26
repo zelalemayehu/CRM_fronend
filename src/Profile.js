@@ -1,3 +1,7 @@
+import './App.css';
+import {useState} from 'react';
+import axios from 'axios';
+
 function Profile() {
     let [_id, setId] = useState();
     let [name, setName] = useState();
