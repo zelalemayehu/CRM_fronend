@@ -22,25 +22,20 @@ function Profile() {
       <form onSubmit = {handleSubmit}>
 
         <div className = 'form-group'>
+        <label for="id" name="Name"></label>
         <input type = 'number' name = 'id' value = {_id} placeholder = 'Enter id'
         autoComplete='off' 
         className = 'form-control' onChange = {e => setId(e.target.value)}></input>
         </div>
 
         <div className = 'form-group'>
-        <input type = 'tel' name = 'phone' value = {phone} 
+        <input type = 'tel' name = 'phone' value = {phone} placeholder = 'Enter Phone Number'
         autoComplete='off' 
         className = 'form-control' onChange = {e => setId(e.target.value)}></input>
         </div>
         
         <div className = 'form-group'>
-        <input type = 'password' name = 'password' value = {password} 
-        autoComplete='off' 
-        className = 'form-control' onChange = {e => setId(e.target.value)}></input>
-        </div>
-
-        <div className = 'form-group'>
-        <input type = 'tel' name = 'phone' value = {phone} 
+        <input type = 'password' name = 'password' value = {password} placeholder = 'Enter password'
         autoComplete='off' 
         className = 'form-control' onChange = {e => setId(e.target.value)}></input>
         </div>
